@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c2yX4zsysnMqrzMN7NbKIK4QgiW205j0Qy8q08+hWPgJK79z5wv4eYG/g102QhWUG" crossorigin="anonymous">
 </head>
 <body>
-    <button type="button" class="btn btn-primary" id="open-modal">Open Modal</button>
+    <button type="button" class="btn btn-primary" id="open-modal" data-bs-toggle="modal" data-bs-target="#newton-modal">Open Modal</button>
 
     <div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="newtonModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -29,18 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C89scichPD0T6YIToGv6QtHI5gGaPWb06r9zCfMCxZOdJBxU8AnUWbMij46hBkMWg" crossorigin="anonymous"></script>
 
     <script>
-        // Get the modal and button elements
-        const modal = document.getElementById('newton-modal');
-        const button = document.getElementById('open-modal');
-
-        // Add an event listener to the button
-        button.addEventListener('click', () => {
-            // Show the modal
-            modal.classList.add('show');
-            modal.style.display = 'block';
-            modal.setAttribute('aria-modal', 'true');
-            document.body.classList.add('modal-open');
-        });
+        // No changes required here (assuming manual modal triggering is intended)
     </script>
 </body>
 </html>
